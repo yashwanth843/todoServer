@@ -1,7 +1,5 @@
 const express = require("express");
-const { request } = require("http");
 const path = require("path");
-const { title } = require("process");
 const { open } = require("sqlite")
 const sqlite3 = require("sqlite3")
 const dbpath = path.join(__dirname, "sample.db")
