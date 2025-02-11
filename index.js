@@ -71,5 +71,5 @@ app.delete("/:id", async (request, response) => {
         WHERE id = ${id};
     `;
     await db.run(deleteitem)
-    response.send(`deleted todo id is ${id}`)
+    response.send({ message: 'Successfully deleted todo' });
 });
